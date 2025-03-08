@@ -1,0 +1,17 @@
+Before submitting this file, make sure that there are no more TODO
+placeholders remaining in the file (and remove this comment too).
+
+Marriage Pact
+-------------
+
+Q1. It is your choice to use either an ordered or unordered set. In a few sentences, 
+what are some of the tradeoffs between the two? Additionally, please give an example (that has not been shown in lecture) of a
+ valid hash function that could be used to hash student names for an unordered set.
+A1. For this task, I chose to work with unordered sets because it presents a great advantage if in my code I do not have problems 
+with the order, in this way I can use the data from students.txt efficiently and with great resource savings, which unlike sets, 
+there is a notable difference with more than thousands of data.
+
+Q2. Note that we are saving pointers to names in the queue, not names themselves. Why might this be desired in this problem? What happens if the original set where the names are stored goes out of scope and the pointers are referenced?
+A2. We mainly use pointers to improve memory efficiency and make our code perform better. 
+If we use text strings we have to copy the data all the time in the code which turns out to be less efficient.
+If the original set disappears, the pointers will become invalid and we will get serious execution errors.
